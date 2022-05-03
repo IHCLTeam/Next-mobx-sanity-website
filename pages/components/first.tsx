@@ -1,21 +1,18 @@
-import react from 'react'
 import Image from 'next/image'
-import imageLoader from '../pages/imageLoader'
-import { Grid,  Paper, Typography } from '@mui/material'
+import { Grid, Paper, Typography } from '@mui/material'
+import imageLoader from '../imageLoader'
 
 
+const SanityData = ({ dgks }: any) => {
 
-
-const Frist = ({ dgks }: any) => {
-  
     return (
         <>
 
             {dgks.map((blog) =>
-                <div key={blog.slug}>
-                   
+                <Typography key={blog.slug}>
 
-                    <Paper 
+
+                    <Paper
                         sx={{
                             margin: 'auto',
                             maxWidth: 1100,
@@ -34,19 +31,19 @@ const Frist = ({ dgks }: any) => {
                                             {blog.title}
                                         </Typography>
                                         <Typography sx={{ fontSize: 12 }} variant="subtitle1">
-                                        {blog.text}
+                                            {blog.text}
                                         </Typography>
                                     </Grid>
                                 </Grid>
                             </Grid>
                         </Grid>
                     </Paper>
-                </div>
+                </Typography>
             )}
-         
+
         </>
     )
 }
 
-export default Frist
+export default SanityData
 
