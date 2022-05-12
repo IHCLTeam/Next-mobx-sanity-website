@@ -8,6 +8,7 @@ const TodoList = ({ todos }: { todos: TodoStore }) => {
         <div>
             {todos.list.map(t => (
                 <Typography key={t.id}>{t.title}
+              
                 </Typography>))}
         </div>
     )

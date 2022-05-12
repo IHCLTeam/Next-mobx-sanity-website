@@ -15,6 +15,7 @@ const SanityData = ({ dgks }: any) => {
 
                         <Paper
                             sx={{
+                         
                                 margin: 'auto',
                                 maxWidth: 1100,
                                 flexGrow: 2,
@@ -34,6 +35,7 @@ const SanityData = ({ dgks }: any) => {
                                             <Typography sx={{ fontSize: 12 }} variant="subtitle1">
                                                 {blog.text}
                                             </Typography>
+                                            
                                         </Grid>
                                     </Grid>
                                 </Grid>

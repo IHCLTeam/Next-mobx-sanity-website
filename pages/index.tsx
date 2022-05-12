@@ -18,11 +18,7 @@ const Home: NextPage = ({ blogs }: any) => {
     <>
     
       <TodoInput todos={todos} />
-      <Box sx={{ flexGrow: 1  ,margin:'auto ' }}>
-       
-        <TodoList todos={todos} />
       
-      </Box>
 
       <SanityData dgks={blogs} ></SanityData>
 
